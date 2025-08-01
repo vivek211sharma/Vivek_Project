@@ -1,0 +1,1 @@
+import React from 'react'; const Home = () => <h1>Welcome to Shoe Store</h1>; export default Home;

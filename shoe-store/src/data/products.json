@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Air Zoom",
+    "brand": "Nike",
+    "price": 5999,
+    "image": "/assets/nike-air.jpg",
+    "description": "Lightweight running shoes"
+  },
+  {
+    "id": 2,
+    "name": "Adidas Ultraboost",
+    "brand": "Adidas",
+    "price": 7999,
+    "image": "/assets/adidas-boost.jpg",
+    "description": "High performance sports shoes"
+  }
+]
