@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium Guitar Store Design System - Musical & Sophisticated */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 13% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    /* Premium musical color palette */
+    --primary: 220 90% 20%; /* Deep midnight blue */
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 220 100% 35%;
+
+    --secondary: 45 90% 55%; /* Warm amber gold */
+    --secondary-foreground: 220 13% 18%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 13% 45%;
+
+    --accent: 25 95% 53%; /* Rich copper accent */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 90% 20%;
+
+    /* Musical gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 90% 20%), hsl(220 100% 35%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 14% 98%));
+    --gradient-accent: linear-gradient(135deg, hsl(45 90% 55%), hsl(25 95% 53%));
+    
+    /* Premium shadows */
+    --shadow-premium: 0 25px 50px -12px hsl(220 90% 20% / 0.25);
+    --shadow-card: 0 4px 25px -5px hsl(220 90% 20% / 0.1);
+    --shadow-glow: 0 0 40px hsl(220 100% 35% / 0.3);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 220 14% 95%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 220 14% 95%;
+
+    --popover: 220 25% 8%;
+    --popover-foreground: 220 14% 95%;
+
+    --primary: 220 100% 65%;
+    --primary-foreground: 220 25% 8%;
+    --primary-glow: 220 100% 75%;
+
+    --secondary: 45 85% 65%;
+    --secondary-foreground: 220 25% 8%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 14% 65%;
+
+    --accent: 25 85% 65%;
+    --accent-foreground: 220 25% 8%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 220 14% 95%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 18%;
+    --ring: 220 100% 65%;
+
+    /* Dark mode gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 25% 8%), hsl(220 20% 15%));
+    --gradient-card: linear-gradient(145deg, hsl(220 25% 10%), hsl(220 20% 12%));
+    --gradient-accent: linear-gradient(135deg, hsl(45 85% 65%), hsl(25 85% 65%));
+    
+    /* Dark mode shadows */
+    --shadow-premium: 0 25px 50px -12px hsl(220 100% 0% / 0.5);
+    --shadow-card: 0 4px 25px -5px hsl(220 100% 0% / 0.3);
+    --shadow-glow: 0 0 40px hsl(220 100% 65% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Enhanced Animations for High-Selling Landing Page */
+@layer utilities {
+  /* Floating animation for musical notes */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+      opacity: 0.2;
+    }
+    50% {
+      transform: translateY(-20px) rotate(180deg);
+      opacity: 0.6;
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Gradient animation for text */
+  @keyframes gradient-x {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 3s ease infinite;
+  }
+
+  /* Enhanced slide-up animation */
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+  }
+
+  /* Fade-in animation */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+
+  /* Glow pulse animation */
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(45, 90, 55, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(45, 90, 55, 0.6);
+    }
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+
+  /* Hover effects for interactive elements */
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Premium card styling */
+  .premium-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .premium-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Musical note animation */
+  @keyframes musical-note {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  .animate-musical-note {
+    animation: musical-note 2s ease-out infinite;
+  }
+}
