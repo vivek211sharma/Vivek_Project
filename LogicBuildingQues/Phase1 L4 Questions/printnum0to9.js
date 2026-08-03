@@ -37,4 +37,4 @@ function printnumber0to9(num)
 }
 
 let input = prompt("enter the number 0 to 9");
-printnumber0to9(Number(input));
+printnumber0to9(Number(input)); 
